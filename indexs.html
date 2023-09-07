@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Kids</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: blue;
+      }
+
+      h2 {
+        text-align: center;
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 10px;
+         color: red;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 2;
+        font-size: 18px;
+      }
+      .readmore {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: blue;
+      }
+
+      .readmore:hover {
+        text-decoration: underline;
+      }
+      button {
+        font-size: 18px;
+        color: #fff;
+        background-color: red;
+        margin: 18px auto;
+        padding: 20px 30px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        transition: ease-in-out;
+        display: block;
+        box-shadow: 5px 5px 10ppx rgbs(0, 0, 0, 0.4);
+      }
+      button:hover {
+        opacity: 0.8;
+        background-color: rgb(106, 106, 145);
+      }
+      .footer {
+        text-align: center;
+        color: blue;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .content {
+        margin: 0 auto;
+        padding: 30px 50px;
+        max-width: 400px;
+      }
+      body {
+        background: linear-gradient(to top, #fca6a6 10%, #a9f8eb 80%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>CODING FOR KIDS</h1>
+      <h2><em>The Importance of Coding for Kids</em></h2>
+      <span>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/534/original/143022439-font-design-for-word-code-kids-with-children-working-on-computer-illustration_1_%281%29.PNG?1690649980"
+        alt="Kid Codes"
+        width="300"
+      >
+      </span>
+      <p>
+        Coding for kids means how we teach kids about coding and programming 😉.
+        Learning to code is like learning a new language. Young children can
+        learn languages faster and easier than adults because their developing
+        brains are made for learning 😊. 
+        <br />
+        As a result, childhood is a great time
+        to start learning computational thinking. Coding helps children🧍‍♂️🧍‍♀️
+        develop skills that will not only benefit them in school but also help
+        them stand out from the crowd in the job market👍.
+        <br />
+        Do you want your kids to have better knowledge of coding, then continue here👇👇👇.
+     </p>
+      <a
+        href="https://www.codewizardshq.com/what-is-coding-for-kids/#h-what-is-coding-and-why-is-it-important-for-kids"
+        target="_blank"
+        class="readmore"
+      >
+      <strong>
+        Read more here😊
+        </strong>
+      <button class="enquiry-button"><strong>Make Enquiry Here</strong></strong></button>
+      <hr />
+      <p class="footer">
+        Page was coded by
+        <a href="https://www.linkedin.com/in/ifeoluwa-adenike/">
+          Ifeoluwa Oni
+        </a>
+      </p>
+    </div>
+    <script>
+    function enquiry() {
+      let name = prompt("Whats your name?");
+      let age = prompt("How old are you?");
+      let email = prompt("What is your email?");
+
+      if (age <= 14)
+      alert( "Welcome " +
+            name +
+            ", Thank you for making this enquiries, An email will be sent to you shortly, with the details!☺");
+        else 
+            alert("Oops sorry " + name + ", this program is for younger kids😔");
+          }  
+      let enquiryButton = document.querySelector(".enquiry-button");
+      enquiryButton.addEventListener("click", enquiry);
+    </script>
+  </body>
+</html>
